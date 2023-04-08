@@ -53,20 +53,20 @@ export default {
       {
         title: "  Title Slide #2",
         // content: 'Slide 3 content.',
-        image: "/src/screen/woman.jpg",
+        image: "../src/screen/woman.jpg",
         content: 'Woman filter',
       },
       {
         title: " Title Slide #1",
         // content: 'Slide 2 content.',
-        image: "/src/screen/mans.jpg",
+        image: "./src/screen/mans.jpg",
         content: ' Man filter',
         // content: 'Content, <span  " style=" font-size: 1.2em;color: yellow">why not?</span>',
       },
       {
         title: "Title Slide #4",
         //content: 'Slide 1 content.',
-        image: "/src/screen/technics.jpg",
+        image: "./src/screen/technics.jpg",
         content: 'Technics filter',
       },
       
@@ -74,7 +74,7 @@ export default {
         title: "  Title Slide #3",
         content: "Content",
         // You can also provide a URL for the image.
-        image: "/src/screen/juvil.jpg",
+        image: "../src/screen/juvil.jpg",
         content: 'Juvil filter',
         //link: 'https://www.maxrivephotography.com/index/C0000rU1RKCHdqwI/G0000X57AtIzuRX0/I0000Gvr9HqdtyXk'
       },
@@ -82,7 +82,7 @@ export default {
       {
         title: " Title Slide #5",
         // content: 'Slide 2 content.',
-        image: "/src/screen/login.jpg",
+        image: "./../src/screen/login.jpg",
         content: 'Працюе авторизація та реєстрація с SQL та localStorage',
       },
       {

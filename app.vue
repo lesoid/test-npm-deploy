@@ -1,9 +1,11 @@
 <template>
-    <Header></Header>
-     <NuxtLayout>
+    <!--  <Header></Header> -->
+	 <LayoutsPortfolioHeader id="header_layout"></LayoutsPortfolioHeader>
+     <NuxtLayout >
+      <!-- <NuxtLayout name="lyu"> -->
        <NuxtPage />
    </NuxtLayout>
-   <h5>idj,</h5>
+   <LayoutsFooter></LayoutsFooter>
  
  </template>
  

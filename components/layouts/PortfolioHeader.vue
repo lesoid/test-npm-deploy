@@ -1,38 +1,21 @@
   
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core";
-const colorMode =  useColorMode();
+
+  const colorMode =  useColorMode();
+
 const hideMenu = ref(true);
 const th = useTheme()
 const burgerActions = ref(null);
 
-console.log('!!! colorMode.value do >  '+ colorMode.value) 
-  watch( colorMode, ()=>{colorMode.value == 'dark'? th.value =true:th.value =false})
-  // onMounted(() => { 
-  //     if (process.client) {//клиент срабатывает хоть и с легкой задержкой
-  //    let cc = localStorage.getItem('nuxt-color-mode')
-  //     cc !== null?  th.value  = cc == 'dark': th.value = false}});
-  
-//onMounted(() => { 
-   // console.log('!!!onMounted start  ') 
-    // for (let index = 0; index < 20; index++) {
-    //     let cc = localStorage.getItem('nuxt-color-mode')
-     //  setTimeout(() => { }, 500);
-     // ()=> colorMode.value = 'sepia'
-    // console.log('!!!onMounted for index  '+index)
-    //  console.log('!!!onMounted cc '+ cc ) 
-    //console.log('!!!onMounted colorMode.value >  '+ colorMode.value) 
-    //   // if (cc !=='system' )
-    //  if (colorMode.value !=='system'&& cc !=='system' )
-  
-    //  colorMode.value = 'sepia'
-    //   localStorage.setItem('nuxt-color-mode',colorMode.value );
-    //      th.value=false
-        // break; 
-   // }
-    // }
-   // );
-
+//if (process.server)console.log('!!! colorMode.value server >  '+ colorMode.value);
+//onMounted(() => {console.log('!!! colorMode.value  onMounted >  '+ colorMode.value) })
+//console.log('!!! colorMode.value do >  '+ colorMode.value) 
+  watch( colorMode, ()=>{colorMode.value == 'dark' ?th.value =true :th.value =false;
+ // console.log('!!! colorMode.value WATCH >  '+ colorMode.value)
+ })
+//onBeforeMount(() => {console.log('!!! colorMode.value onBeforeMount >  '+ colorMode.value) })
+ 
   
    
      onClickOutside(burgerActions, () => (hideMenu.value = true));

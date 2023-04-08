@@ -33,6 +33,8 @@
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
 
+// Вывод: /home/user/myproject/public/images/logo.png (на Unix-системе)
+
 export default {
   components: { VueperSlides, VueperSlide },
   data: () => ({
